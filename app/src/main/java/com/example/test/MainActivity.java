@@ -1,16 +1,15 @@
 package com.example.test;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
-    private long backPressedTime;
+    private static long back_pressed;
     private Toast backToast;
    @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -39,15 +38,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        if(backPressedTime + 2000 > System.currentTimeMillis()){
-            backToast.cancel();            super.onBackPressed();
-            return;
-        } else{
-            backToast = Toast.makeText(getBaseContext(),"Нажмите ещё раз, чтобы выйти", Toast.LENGTH_SHORT);
-            backToast.show();
-        }
-        backPressedTime = System.currentTimeMillis();
+        if (back_pressed + 2000 > System.currentTimeMillis())
+            super.onBackPressed();
+        else
+            Toast.makeText(getBaseContext(), "Press once again to exit!",
+                    Toast.LENGTH_SHORT).show();
+        back_pressed = System.currentTimeMillis();
     }
 
     //системная кнопка назад //конец
