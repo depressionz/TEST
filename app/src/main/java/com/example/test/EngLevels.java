@@ -44,6 +44,20 @@ public class EngLevels extends AppCompatActivity {
             }
         });
         //Кнопка для перехода на 1 LVL - конец
+        //Кнопка для перехода на 2 LVL - начало
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        textView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(EngLevels.this, level2.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
+                    //пусто
+                }
+            }
+        });
+        //Кнопка для перехода на 1 LVL - конец
     }
     //системная кнопка назад - начало
     @Override

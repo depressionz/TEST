@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lvl2text1">Cat</string>
+    <string name="lvl2text2">Elephant</string>
+    <string name="lvl2text3">Dog</string>
+    <string name="lvl2text4">Giraffe</string>
+    <string name="lvl2text5">Fish</string>
+    <string name="lvl2text6">Rabbit</string>
+    <string name="lvl2text7">Sheep</string>
+    <string name="lvl2text8">Bear</string>
+    <string name="lvl2text9">Bird</string>
+    <string name="lvl2text10">Cow</string>
+
+</resources>
