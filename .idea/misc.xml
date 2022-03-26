@@ -10,15 +10,18 @@
         <entry key="..\:/TEST/app/src/main/res/drawable/button_stroke_yellow_60_press_blue.xml" value="0.149" />
         <entry key="..\:/TEST/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1315" />
         <entry key="..\:/TEST/app/src/main/res/drawable/style_btn_blue200.xml" value="0.165" />
+        <entry key="..\:/TEST/app/src/main/res/drawable/style_btn_stoke_green_press.xml" value="0.2165" />
         <entry key="..\:/TEST/app/src/main/res/drawable/style_btn_stoke_yellow.xml" value="0.1315" />
         <entry key="..\:/TEST/app/src/main/res/drawable/style_btn_stoke_yellow_press.xml" value="0.1315" />
         <entry key="..\:/TEST/app/src/main/res/drawable/style_btn_yellow_60.xml" value="0.149" />
         <entry key="..\:/TEST/app/src/main/res/drawable/style_btn_yellow_60_press.xml" value="0.149" />
         <entry key="..\:/TEST/app/src/main/res/drawable/style_points.xml" value="0.149" />
-        <entry key="..\:/TEST/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/TEST/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/TEST/app/src/main/res/layout/eng_levels.xml" value="0.1" />
         <entry key="..\:/TEST/app/src/main/res/layout/previewdiaglog.xml" value="0.128125" />
         <entry key="..\:/TEST/app/src/main/res/layout/previewdialog.xml" value="0.32105263157894737" />
+        <entry key="..\:/TEST/app/src/main/res/layout/previewdialog1.xml" value="0.2566137566137566" />
+        <entry key="..\:/TEST/app/src/main/res/layout/priviewdialog.xml" value="0.22" />
         <entry key="..\:/TEST/app/src/main/res/layout/universal.xml" value="0.25" />
       </map>
     </option>

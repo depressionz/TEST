@@ -3,4 +3,6 @@
     <string name="start">Начало</string>
     <string name="back">Вернуться</string>
     <string name="level">Уровень:</string>
+    <string name="level_one">Выбери букву и узнай как она произносится.\n\nДля прохождения уровня необходимо получить 10 очков.</string>
+    <string name="textcontinue">Продолжить</string>
 </resources>
