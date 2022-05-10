@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity$level3"
+            android:name=".level3"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

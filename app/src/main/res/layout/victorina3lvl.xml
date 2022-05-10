@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -162,7 +161,7 @@
                 <ImageView
                     android:id="@+id/img_right"
                     android:layout_width="216dp"
-                    android:layout_height="200dp"
+                    android:layout_height="271dp"
                     android:layout_marginLeft="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginRight="20dp"
@@ -181,20 +180,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="20dp"
-            android:text="@string/level_two_1"
-            android:textSize="24dp" />
+            android:text="@string/level_three"
+            android:textSize="20dp" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="322dp"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="wrap_content"
+                android:layout_width="20dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="120dp"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:background="@drawable/style_btn_stoke_yellow"
+                android:text="@string/level_three_1" />
         </LinearLayout>
 
 

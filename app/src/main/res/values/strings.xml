@@ -7,5 +7,6 @@
     <string name="level_one">Выбери букву и узнай как она произносится.\n\nДля прохождения уровня необходимо получить 10 очков.</string>
     <string name="textcontinue">Продолжить</string>
     <string name="level_two_1">Выбери Cat</string>
-    <string name="level_three"></string>
+    <string name="level_three">Повторяй за диктором!</string>
+    <string name="level_three_1">Транскрипция слова</string>
 </resources>

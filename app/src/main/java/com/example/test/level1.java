@@ -21,10 +21,7 @@ public class level1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.alphabet);
 
-        //Развернуть игру на full screen - начало
-        Window w = getWindow();
-        w.setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS, WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
-        //Развернуть игру на full screen - конец
+
 
         //Вызов диалогового окна в начале игры;
         dialog = new Dialog(this);
