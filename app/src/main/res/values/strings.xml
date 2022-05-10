@@ -9,4 +9,6 @@
     <string name="level_two_1">Выбери Cat</string>
     <string name="level_three">Повторяй за диктором!</string>
     <string name="level_three_1">Транскрипция слова</string>
+    <string name="level_for">Глагол</string>
+    <string name="level_five">Семья</string>
 </resources>

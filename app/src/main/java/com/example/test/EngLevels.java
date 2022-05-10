@@ -70,6 +70,34 @@ public class EngLevels extends AppCompatActivity {
             }
         });
         //Кнопка для перехода на 3 LVL - конец
+        //Кнопка для перехода на 4 LVL - начало
+        TextView textView4 = (TextView) findViewById(R.id.textView4);
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(EngLevels.this, level4.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
+                    //пусто
+                }
+            }
+        });
+        //Кнопка для перехода на 4 LVL - конец
+        //Кнопка для перехода на 5 LVL - начало
+        TextView textView5 = (TextView) findViewById(R.id.textView5);
+        textView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(EngLevels.this, level5.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
+                    //пусто
+                }
+            }
+        });
+        //Кнопка для перехода на 5 LVL - конец
     }
     //системная кнопка назад - начало
     @Override
