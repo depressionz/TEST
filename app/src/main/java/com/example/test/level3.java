@@ -1,7 +1,5 @@
 package com.example.test;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -11,15 +9,40 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-public class level1 extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Random;
+
+public class level3 extends AppCompatActivity {
 
     Dialog dialog;
+
+    public int num_left; //переменная для лев картинки
+    Array array = new Array(); //Создали новый обект из класса Array
+    Random random = new Random(); //Для генерации случайной картинки  (чисел)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.alphabet);
+        setContentView(R.layout.victorinal);
+
+        //Скругляем края для левой картинки - начало
+        final ImageView img_left = (ImageView)findViewById(R.id.img_left);
+        img_left.setClipToOutline(true);
+        //Скругляем края для левой картинки - конец
+
+        // Скругляем края для правой картинки - начало
+        final ImageView img_right = (ImageView)findViewById(R.id.img_right);
+        img_right.setClipToOutline(true);
+        // Скругляем края для правой картинки - конец
+
+        //Путь к левой TextView
+       //  final TextView text_left = findViewById(R.id.text_left);
+        //путь к правой Text View
+       // final TextView text_right = findViewById(R.id.text_right);
+
 
         //Развернуть игру на full screen - начало
         Window w = getWindow();
@@ -42,7 +65,7 @@ public class level1 extends AppCompatActivity {
                 //обработка нажатия кнопки - начало
                 try {
                         //Вернуться назад к выбору уровня - начало
-                    Intent intent = new Intent( level1.this, EngLevels.class); //намеренье для перехода
+                    Intent intent = new Intent( level3.this, EngLevels.class); //намеренье для перехода
                     startActivity(intent); //Старт намеренье
                     finish();
                         //Вернуться назад к выбору уровня - конец
@@ -78,7 +101,7 @@ public class level1 extends AppCompatActivity {
                 //обработка нажатия кнопки вернуться - начало
                 try {
                     //Вернуться назад к выбору уровню - начало
-                    Intent intent = new Intent(level1.this, EngLevels.class); //намеренье для перехода
+                    Intent intent = new Intent(level3.this, EngLevels.class); //намеренье для перехода
                     startActivity(intent);
                     finish();
                     //Вернуться назад к выбору уровню - конец
@@ -91,6 +114,9 @@ public class level1 extends AppCompatActivity {
         //Кнопка вернуться - конец
 
 
+        num_left = random.nextInt(11); //генерируем рандомное число от 0 до 10
+        img_left.setImageResource(array.images1[num_left]); //Достаем из массива картинку
+
     }
     //Системная кнопка назад - начало
     @Override
@@ -98,7 +124,7 @@ public class level1 extends AppCompatActivity {
         //обработка нажатия кнопки вернуться - начало
         try {
             //Вернуться назад к выбору уровню - начало
-            Intent intent = new Intent(level1.this, EngLevels.class); //намеренье для перехода
+            Intent intent = new Intent(level3.this, EngLevels.class); //намеренье для перехода
             startActivity(intent);
             finish();
             //Вернуться назад к выбору уровню - конец
@@ -108,6 +134,5 @@ public class level1 extends AppCompatActivity {
         //обработка нажатия кнопки вернуться - конец
     }
     //Системная кнопка назад - конец
-
 
 }

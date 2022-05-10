@@ -6,9 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 public class EngLevels extends AppCompatActivity {
 
@@ -57,7 +55,21 @@ public class EngLevels extends AppCompatActivity {
                 }
             }
         });
-        //Кнопка для перехода на 1 LVL - конец
+        //Кнопка для перехода на 2 LVL - конец
+        //Кнопка для перехода на 3 LVL - начало
+        TextView textView3 = (TextView) findViewById(R.id.textView3);
+        textView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(EngLevels.this, level3.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
+                    //пусто
+                }
+            }
+        });
+        //Кнопка для перехода на 3 LVL - конец
     }
     //системная кнопка назад - начало
     @Override

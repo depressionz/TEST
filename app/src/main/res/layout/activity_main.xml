@@ -27,10 +27,10 @@
     <LinearLayout
         android:id="@+id/startLayout"
         android:layout_width="wrap_content"
-        android:layout_height="240dp"
+        android:layout_height="290dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-54dp"
+        android:layout_marginBottom="-84dp"
         android:orientation="horizontal"
         android:padding="10dp">
 
@@ -49,6 +49,30 @@
             android:textSize="26dp" />
 
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/helpLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-54dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/ticket_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_stroke_white_press"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/help"
+            android:textColor="#009688"
+            android:textSize="15dp" />
     </LinearLayout>
 
 

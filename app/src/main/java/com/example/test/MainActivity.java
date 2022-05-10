@@ -11,29 +11,29 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
     private static long back_pressed;
     private Toast backToast;
-   @Override
+    @Override
     protected void onCreate(Bundle savedInstanceState){
-       super.onCreate(savedInstanceState);
-       setContentView(R.layout.activity_main);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 
 
-       Button buttonStart = (Button)findViewById(R.id.buttonstart);
+        Button buttonStart = (Button)findViewById(R.id.buttonstart);
 
-       buttonStart.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view) {
+        buttonStart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 try{
-                        Intent intent = new Intent(MainActivity.this, EngLevels.class);
-                        startActivity(intent);finish();
+                    Intent intent = new Intent(MainActivity.this, EngLevels.class);
+                    startActivity(intent);finish();
                 } catch (Exception e ){
 
                 }
-           }
-       });
+            }
+        });
 
 
 
-   }
+    }
 //системная кнопка назад //начало
 
     @Override
@@ -47,4 +47,4 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //системная кнопка назад //конец
-    }
+}

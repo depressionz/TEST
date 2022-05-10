@@ -49,14 +49,13 @@
             <ScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
-                >
+                android:layout_marginTop="30dp">
 
                 <LinearLayout
                     android:id="@+id/conteiner4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:id="@+id/line1"
@@ -118,200 +117,200 @@
                             android:text="5"
                             android:textSize="20dp"
                             android:textStyle="bold" />
-                    </LinearLayout> //1контейнер
+                    </LinearLayout>
+                    //1контейнер
+
                     <LinearLayout
                         android:id="@+id/line2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:layout_marginTop="10dp"
-                        >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView6"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="6"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="6"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView7"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="7"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="7"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView8"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="8"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="8"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView9"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="9"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="9"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView10"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="10"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
-                    </LinearLayout> //2контейнер
+                            android:text="10"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    //2контейнер
+
                     <LinearLayout
-                        android:id="@+id/line4"
+                        android:id="@+id/line3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:layout_marginTop="10dp"
-                        >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView11"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="11"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="11"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView12"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="12"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="12"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView13"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="13"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="13"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView14"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="14"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="14"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView15"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="15"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
-                    </LinearLayout> //3контейнер
+                            android:text="15"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    //3контейнер
+
                     <LinearLayout
                         android:id="@+id/line4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
                         android:layout_marginTop="10dp"
-                        >
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textView16"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="16"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="16"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView17"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="17"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="17"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView18"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="18"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="18"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView19"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="19"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
+                            android:text="19"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/textView20"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:text="20"
                             android:layout_marginRight="10dp"
                             android:background="@drawable/button_eng_levels"
-                            android:textSize="20dp"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            />
-                    </LinearLayout> //4контейнер
-
+                            android:text="20"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    //4контейнер
 
                 </LinearLayout>
             </ScrollView>
