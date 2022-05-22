@@ -25,7 +25,7 @@ public class level3 extends AppCompatActivity {
         //Вызов диалогового окна в начале игры;
         dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрытие заголовка
-        dialog.setContentView(R.layout.priviewdialog);//путь к макету диалог. окна
+        dialog.setContentView(R.layout.preview_3);//путь к макету диалог. окна
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозначный фон
         dialog.setCancelable(false);//окно нельзя закрыть системной кнопкой
         dialog.show();//показ диалог окна

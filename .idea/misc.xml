@@ -23,19 +23,42 @@
         <entry key="..\:/TEST/app/src/main/res/layout/previewdialog1.xml" value="0.2566137566137566" />
         <entry key="..\:/TEST/app/src/main/res/layout/priviewdialog.xml" value="0.22" />
         <entry key="..\:/TEST/app/src/main/res/layout/universal.xml" value="0.25" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/background_no_press.xml" value="0.3675" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/backgroundedit.xml" value="0.3675" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/btn_stroke_white_press.xml" value="0.3675" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/button_eng_levels.xml" value="0.3675" />
         <entry key="..\:/TEST12/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3295" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/style_btn_false.xml" value="0.283" />
         <entry key="..\:/TEST12/app/src/main/res/drawable/style_btn_stoke_green60_press.xml" value="0.3675" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/style_btn_stoke_green_press.xml" value="0.3675" />
         <entry key="..\:/TEST12/app/src/main/res/drawable/style_btn_stoke_yellow.xml" value="0.168" />
-        <entry key="..\:/TEST12/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
-        <entry key="..\:/TEST12/app/src/main/res/layout/alphabet.xml" value="0.36666666666666664" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/style_btn_yellow_60.xml" value="0.297" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/style_btn_yellow_60_press.xml" value="0.297" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/style_button_next.xml" value="0.3675" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/alphabet.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/eng_levels.xml" value="0.2907608695652174" />
-        <entry key="..\:/TEST12/app/src/main/res/layout/priviewdialog.xml" value="0.358695652173913" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/orfagrafuya6lvl.xml" value="0.36666666666666664" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_10.xml" value="0.14603960396039603" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_2.xml" value="0.18" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_3.xml" value="0.22" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_4.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_5.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_6.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_7.xml" value="0.22" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_9.xml" value="0.14603960396039603" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/priviewdialog.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/spelling10lvl.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/spelling6lvl.xml" value="0.25" />
         <entry key="..\:/TEST12/app/src/main/res/layout/tickethelp.xml" value="0.30625" />
         <entry key="..\:/TEST12/app/src/main/res/layout/universal.xml" value="0.358695652173913" />
         <entry key="..\:/TEST12/app/src/main/res/layout/victorina3lvl.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/victorina4lvl.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/victorina5lvl.xml" value="0.24427083333333333" />
-        <entry key="..\:/TEST12/app/src/main/res/layout/victorinal.xml" value="0.33425925925925926" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/victorina7lvl.xml" value="0.16" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/victorina8lvl.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/victorina9lvl.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/victorinal.xml" value="0.25" />
       </map>
     </option>
   </component>

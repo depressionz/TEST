@@ -20,27 +20,27 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="30dp"
         android:src="@drawable/main_girl" />
 
     <LinearLayout
         android:id="@+id/startLayout"
         android:layout_width="wrap_content"
-        android:layout_height="290dp"
+        android:layout_height="350dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-84dp"
-        android:orientation="horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="-50dp"
+        android:orientation="vertical"
         android:padding="10dp">
 
         <Button
             android:id="@+id/buttonstart"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
+            android:layout_width="203dp"
+
+            android:layout_height="61dp"
             android:background="@drawable/btn_stroke_white_press"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
@@ -48,31 +48,46 @@
             android:textColor="#009688"
             android:textSize="26dp" />
 
+        <Button
+            android:id="@+id/words"
+            android:layout_width="match_parent"
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/helpLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-54dp"
-        android:orientation="horizontal"
-        android:padding="10dp">
+            android:layout_height="61dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_stroke_white_press"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/words"
+            android:textColor="#009688"
+            android:textSize="26dp" />
 
         <Button
-            android:id="@+id/ticket_button"
+            android:id="@+id/stats"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+
+            android:layout_height="61dp"
             android:layout_marginTop="10dp"
-            android:layout_weight="1"
             android:background="@drawable/btn_stroke_white_press"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="@string/help"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/stats"
             android:textColor="#009688"
-            android:textSize="15dp" />
+            android:textSize="26dp" />
+
+        <Button
+            android:id="@+id/ticket"
+            android:layout_width="match_parent"
+
+            android:layout_height="61dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_stroke_white_press"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/ticket"
+            android:textColor="#009688"
+            android:textSize="26dp" />
+
+
     </LinearLayout>
 
 

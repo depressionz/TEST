@@ -98,6 +98,76 @@ public class EngLevels extends AppCompatActivity {
             }
         });
         //Кнопка для перехода на 5 LVL - конец
+        //Кнопка для перехода на 6 LVL - начало
+        TextView textView6 = (TextView) findViewById(R.id.textView6);
+        textView6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(EngLevels.this, level6.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
+                    //пусто
+                }
+            }
+        });
+        //Кнопка для перехода на 6 LVL - конец
+        //Кнопка для перехода на 7 LVL - начало
+        TextView textView7 = (TextView) findViewById(R.id.textView7);
+        textView7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(EngLevels.this, level7.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
+                    //пусто
+                }
+            }
+        });
+        //Кнопка для перехода на 7 LVL - конец
+        //Кнопка для перехода на 8 LVL - начало
+        TextView textView8 = (TextView) findViewById(R.id.textView8);
+        textView8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(EngLevels.this, level8.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
+                    //пусто
+                }
+            }
+        });
+        //Кнопка для перехода на 8 LVL - конец
+        //Кнопка для перехода на 9 LVL - начало
+        TextView textView9 = (TextView) findViewById(R.id.textView9);
+        textView9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(EngLevels.this, level9.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
+                    //пусто
+                }
+            }
+        });
+        //Кнопка для перехода на 9 LVL - конец
+        //Кнопка для перехода на 10 LVL - начало
+        TextView textView10 = (TextView) findViewById(R.id.textView10);
+        textView10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try {
+                    Intent intent = new Intent(EngLevels.this, level10.class);
+                    startActivity(intent);finish();
+                } catch (Exception e) {
+                    //пусто
+                }
+            }
+        });
+        //Кнопка для перехода на 10 LVL - конец
     }
     //системная кнопка назад - начало
     @Override
