@@ -14,6 +14,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class level4 extends AppCompatActivity {
 
+    private Button option1, option2, option3;
+
+
+
     Dialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,7 @@ public class level4 extends AppCompatActivity {
         });
         //кнопка которая закрывает диалоговое окно - конец
 
+
         //кнопка продолжить - начало
         Button btncontinue = (Button)dialog.findViewById(R.id.btncontinue);
         btncontinue.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +70,9 @@ public class level4 extends AppCompatActivity {
         });
         //кнопка продолжить - конец
 
+        option1 = findViewById(R.id.button1);
+        option2 = findViewById(R.id.button2);
+        option3 = findViewById(R.id.button3);
         //Кнопка вернуться - начало
         Button btn_back = (Button) findViewById(R.id.button_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -85,8 +93,31 @@ public class level4 extends AppCompatActivity {
         });
         //Кнопка вернуться - конец
 
+        //Код для кнопки 1
+      option1.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+
+          }
+      });
+        //Код для кнопки 2
+        option2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
+        //Код для кнопки 3
+        option3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
 
     }
+
     //Системная кнопка назад - начало
     @Override
     public void onBackPressed(){
