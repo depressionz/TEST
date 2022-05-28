@@ -40,7 +40,7 @@
             android:id="@+id/buttonstart"
             android:layout_width="203dp"
 
-            android:layout_height="61dp"
+            android:layout_height="60dp"
             android:background="@drawable/btn_stroke_white_press"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"

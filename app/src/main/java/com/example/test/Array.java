@@ -17,19 +17,19 @@ public class Array {
 
 
     };
-        final int[] power1 = {0,1,2,3,4,5,6,7,8,9,10};
+    final int[] power1 = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-        final int[] texts1 = {
-                R.string.lvl2text1,
-                R.string.lvl2text2,
-                R.string.lvl2text3,
-                R.string.lvl2text4,
-                R.string.lvl2text5,
-                R.string.lvl2text6,
-                R.string.lvl2text7,
-                R.string.lvl2text8,
-                R.string.lvl2text9,
-                R.string.lvl2text10,
-        };
+    final int[] texts1 = {
+            R.string.lvl2text1,
+            R.string.lvl2text2,
+            R.string.lvl2text3,
+            R.string.lvl2text4,
+            R.string.lvl2text5,
+            R.string.lvl2text6,
+            R.string.lvl2text7,
+            R.string.lvl2text8,
+            R.string.lvl2text9,
+            R.string.lvl2text10,
+    };
     //массив для второго уровня - конец
 }

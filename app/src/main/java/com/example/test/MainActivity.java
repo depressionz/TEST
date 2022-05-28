@@ -8,6 +8,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.yalantis.library.Koloda;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     private static long back_pressed;
     private Toast backToast;
@@ -17,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+//Кнопка перехода на уровни - начало
         Button buttonStart = (Button)findViewById(R.id.buttonstart);
 
         buttonStart.setOnClickListener(new View.OnClickListener() {
@@ -30,8 +36,23 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+//Кнопка перехода на уровни - конец
 
 
+
+        Button words = (Button)findViewById(R.id.words);
+
+        words.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try{
+                    Intent intent = new Intent(MainActivity.this, learn.class);
+                    startActivity(intent);finish();
+                } catch (Exception e ){
+
+                }
+            }
+        });
 
     }
 //системная кнопка назад //начало

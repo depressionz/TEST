@@ -35,12 +35,17 @@
         <entry key="..\:/TEST12/app/src/main/res/drawable/style_btn_yellow_60.xml" value="0.297" />
         <entry key="..\:/TEST12/app/src/main/res/drawable/style_btn_yellow_60_press.xml" value="0.297" />
         <entry key="..\:/TEST12/app/src/main/res/drawable/style_button_next.xml" value="0.3675" />
+        <entry key="..\:/TEST12/app/src/main/res/drawable/style_points_true.xml" value="0.1995" />
         <entry key="..\:/TEST12/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/TEST12/app/src/main/res/layout/alphabet.xml" value="0.22" />
-        <entry key="..\:/TEST12/app/src/main/res/layout/eng_levels.xml" value="0.2907608695652174" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/eng_levels.xml" value="0.18" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/help.xml" value="0.21504916631038906" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/item_koloda.xml" value="0.2441123188405797" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/lexicon.xml" value="0.25" />
         <entry key="..\:/TEST12/app/src/main/res/layout/orfagrafuya6lvl.xml" value="0.36666666666666664" />
-        <entry key="..\:/TEST12/app/src/main/res/layout/preview_10.xml" value="0.14603960396039603" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_10.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_2.xml" value="0.18" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_2_end.xml" value="0.3313023610053313" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_3.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_4.xml" value="0.33" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_5.xml" value="0.33" />
@@ -48,8 +53,9 @@
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_7.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_9.xml" value="0.14603960396039603" />
         <entry key="..\:/TEST12/app/src/main/res/layout/priviewdialog.xml" value="0.33" />
-        <entry key="..\:/TEST12/app/src/main/res/layout/spelling10lvl.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/spelling10lvl.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/spelling6lvl.xml" value="0.25" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/stats.xml" value="0.21504916631038906" />
         <entry key="..\:/TEST12/app/src/main/res/layout/tickethelp.xml" value="0.30625" />
         <entry key="..\:/TEST12/app/src/main/res/layout/universal.xml" value="0.358695652173913" />
         <entry key="..\:/TEST12/app/src/main/res/layout/victorina3lvl.xml" value="0.22" />
