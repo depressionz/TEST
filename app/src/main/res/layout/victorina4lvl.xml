@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -49,25 +48,15 @@
                     android:textColor="#607D8B"
                     android:textSize="24dp" />
 
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="20dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="top"
-                    android:layout_marginEnd="-50dp"
-                    android:layout_weight="1"
-                    android:padding="0dp"
-                    android:paddingStart="60dp"
-                    app:srcCompat="@drawable/timer" />
-
                 <TextView
-                    android:id="@+id/timer"
+                    android:id="@+id/text_levels"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="20dp"
-                    android:text="00:29"
-                    android:textSize="22sp" />
-
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:text="@string/level"
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
@@ -142,6 +131,51 @@
                     />
 
                 <TextView
+                    android:id="@+id/point10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+
+                    />
+
+                <TextView
+                    android:id="@+id/point11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+
+                    />
+
+                <TextView
+                    android:id="@+id/point12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+
+                    />
+
+                <TextView
+                    android:id="@+id/point13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+
+                    />
+
+                <TextView
+                    android:id="@+id/point14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+
+                    />
+
+                <TextView
                     android:id="@+id/point15"
                     android:layout_width="wrap_content"
                     android:layout_height="10dp"
@@ -168,6 +202,33 @@
 
                     />
 
+                <TextView
+                    android:id="@+id/point18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+
+                    />
+
+                <TextView
+                    android:id="@+id/point19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+
+                    />
+
+                <TextView
+                    android:id="@+id/point20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_points"
+
+                    />
+
             </LinearLayout>
 
             <LinearLayout
@@ -178,18 +239,20 @@
                 android:layout_weight="1"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/question"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="20dp"
+                <ImageView
+                    android:id="@+id/img_right"
+                    android:layout_width="308dp"
+                    android:layout_height="234dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="100"
                     android:background="@drawable/style_btn_stoke_green60_press"
-                    android:padding="45dp"
-                    android:text="Я смогу это сделать?"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_test"
 
+
+                    />
             </LinearLayout>
 
         </LinearLayout>
@@ -207,17 +270,15 @@
             android:orientation="horizontal"
             android:paddingTop="20dp">
 
-            <TextView
-                android:id="@+id/tv_option_one"
-                android:layout_width="242dp"
-                android:layout_height="41dp"
-                android:layout_marginHorizontal="40dp"
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="10dp"
+                android:layout_height="48dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/style_btn_stoke_yellow_press"
-                android:gravity="center"
-                android:text="I can eat"
-                android:textColor="#7A8089"
-                android:textSize="18sp" />
+                android:layout_weight="1"
+                android:background="@drawable/style_btn_stoke_yellow"
+                android:text="@string/level_for" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -225,17 +286,15 @@
             android:layout_height="100dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tv_option_two"
-                android:layout_width="242dp"
-                android:layout_height="41dp"
-                android:layout_marginHorizontal="40dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/style_btn_stoke_yellow_press"
-                android:gravity="center"
-                android:text="You can Google"
-                android:textColor="#7A8089"
-                android:textSize="18sp" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="10dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/style_btn_stoke_yellow"
+                android:text="@string/level_for" />
+            />
         </LinearLayout>
 
         <LinearLayout
@@ -243,36 +302,14 @@
             android:layout_height="70dp"
             android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/tv_option_one3"
-                android:layout_width="243dp"
-                android:layout_height="40dp"
-
-
-                android:layout_marginVertical="20dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginBottom="40dp"
-                android:background="@drawable/style_btn_stoke_yellow_press"
-                android:gravity="center"
-                android:text="I can do it"
-                android:textColor="#7A8089"
-                android:textSize="18sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="322dp"
-            android:layout_height="90dp"
-            android:orientation="horizontal"
-            android:paddingTop="30dp">
-
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/button3"
                 android:layout_width="10dp"
                 android:layout_height="48dp"
                 android:layout_marginTop="0dp"
                 android:layout_weight="1"
-                android:background="@drawable/style_btn_stoke_green_press"
-                android:text="Далее" />
+                android:background="@drawable/style_btn_stoke_yellow"
+                android:text="@string/level_for" />
         </LinearLayout>
 
 

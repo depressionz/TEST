@@ -1,7 +1,5 @@
 package com.example.test;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -9,32 +7,18 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-import java.util.Random;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class level4 extends AppCompatActivity {
 
-    public int option1, option2,option3;
-    public int next_btn;
-
-    Arrayfor4 array = new Arrayfor4();
-    Random random = new Random();
     Dialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.victorina4lvl);
-
-        TextView option1 = findViewById(R.id.tv_option_one);
-        TextView option2 = findViewById(R.id.tv_option_two);
-        TextView option3 = findViewById(R.id.tv_option_one3);
-        TextView question = findViewById(R.id.question);
-
 
 
         //Вызов диалогового окна в начале игры;
@@ -100,11 +84,6 @@ public class level4 extends AppCompatActivity {
             }
         });
         //Кнопка вернуться - конец
-
-
-
-        question.setText(array.texts1[0]); //Достаем из массива вопрос
-      //  if (question = "")
 
 
     }

@@ -108,6 +108,13 @@ public class level3 extends AppCompatActivity {
         img_center.setImageResource(array.images1[0]);
     }
 
+
+
+
+
+
+
+
     //Системная кнопка назад - начало
     @Override
     public void onBackPressed(){
