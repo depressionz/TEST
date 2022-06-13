@@ -49,7 +49,7 @@
                     android:textSize="24dp" />
 
                 <TextView
-                    android:id="@+id/text_levels"
+                    android:id="@+id/countLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -113,7 +113,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/point"
+                    android:id="@+id/point6"
                     android:layout_width="wrap_content"
                     android:layout_height="10dp"
                     android:layout_weight="1"
@@ -122,7 +122,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/point9"
+                    android:id="@+id/point7"
                     android:layout_width="wrap_content"
                     android:layout_height="10dp"
                     android:layout_weight="1"
@@ -131,7 +131,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/point10"
+                    android:id="@+id/point8"
                     android:layout_width="wrap_content"
                     android:layout_height="10dp"
                     android:layout_weight="1"
@@ -176,7 +176,7 @@
                     android:layout_weight="100"
                     android:background="@drawable/style_btn_stoke_green60_press"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_test"
+                    android:src="@drawable/verb_4"
 
 
                     />

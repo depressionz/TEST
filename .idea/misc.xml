@@ -44,7 +44,7 @@
         <entry key="..\:/TEST12/app/src/main/res/layout/alphabet.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/eng_levels.xml" value="0.33" />
         <entry key="..\:/TEST12/app/src/main/res/layout/help.xml" value="0.14709569577935647" />
-        <entry key="..\:/TEST12/app/src/main/res/layout/item_koloda.xml" value="0.185" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/item_koloda.xml" value="0.33" />
         <entry key="..\:/TEST12/app/src/main/res/layout/learn.xml" value="0.2071622846781505" />
         <entry key="..\:/TEST12/app/src/main/res/layout/orfagrafuya6lvl.xml" value="0.36666666666666664" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_10.xml" value="0.14603960396039603" />
@@ -56,8 +56,12 @@
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_4_end.xml" value="0.25" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_4_end_over.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_5.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_5_end.xml" value="0.18" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_5_end_over.xml" value="0.3009833262077811" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_6.xml" value="0.33" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_6_end.xml" value="0.25" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_7.xml" value="0.22" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/preview_7_end.xml" value="0.22" />
         <entry key="..\:/TEST12/app/src/main/res/layout/preview_9.xml" value="0.14603960396039603" />
         <entry key="..\:/TEST12/app/src/main/res/layout/priviewdialog.xml" value="0.33" />
         <entry key="..\:/TEST12/app/src/main/res/layout/priviewdialog_end.xml" value="0.14709569577935647" />
@@ -70,7 +74,8 @@
         <entry key="..\:/TEST12/app/src/main/res/layout/victorina4lvl.xml" value="0.25" />
         <entry key="..\:/TEST12/app/src/main/res/layout/victorina5lvl.xml" value="0.24427083333333333" />
         <entry key="..\:/TEST12/app/src/main/res/layout/victorina7lvl.xml" value="0.25" />
-        <entry key="..\:/TEST12/app/src/main/res/layout/victorina8lvl.xml" value="0.2" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/victorina7lvl_end.xml" value="0.17905711695376247" />
+        <entry key="..\:/TEST12/app/src/main/res/layout/victorina8lvl.xml" value="0.33" />
         <entry key="..\:/TEST12/app/src/main/res/layout/victorina9lvl.xml" value="0.33" />
         <entry key="..\:/TEST12/app/src/main/res/layout/victorinal.xml" value="0.25" />
       </map>

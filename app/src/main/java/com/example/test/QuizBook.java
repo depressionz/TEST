@@ -29,13 +29,13 @@ public class QuizBook
     };
     public static boolean[] answers = new boolean[]{
             true,
+            false,
+            false,
             true,
             true,
             true,
-            true,
-            true,
-            true,
-            true,
+            false,
+            false,
             true
     };
 }

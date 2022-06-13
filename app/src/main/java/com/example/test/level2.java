@@ -62,7 +62,7 @@ public class level2 extends AppCompatActivity {
 
 
         //переменная text_levels
-        TextView text_level = findViewById(R.id.text_level);
+        TextView text_level = findViewById(R.id.text_level_1);
 
 
         //Скругляем края для левой картинки - начало

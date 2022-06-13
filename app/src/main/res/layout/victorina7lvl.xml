@@ -114,7 +114,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/point"
+                    android:id="@+id/point6"
                     android:layout_width="wrap_content"
                     android:layout_height="10dp"
                     android:layout_weight="1"
@@ -123,7 +123,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/point9"
+                    android:id="@+id/point7"
                     android:layout_width="wrap_content"
                     android:layout_height="10dp"
                     android:layout_weight="1"
@@ -176,7 +176,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/text_level"
+            android:id="@+id/text_level_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"

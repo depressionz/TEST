@@ -21,6 +21,7 @@ import java.util.Random;
 public class level6 extends AppCompatActivity {
 
     Dialog dialog;
+    Dialog dialogEnd;
     public String rightAnswer;
     public int rightAnswerCount = 0;
     public int quizCount = 1;
@@ -29,7 +30,7 @@ public class level6 extends AppCompatActivity {
     private ImageView image_center;
 
     final int[] progress = {
-            R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5, R.id.point6, R.id.point7, R.id.point8, R.id.point9
+            R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5, R.id.point6
     };
 
 
@@ -50,6 +51,52 @@ public class level6 extends AppCompatActivity {
         dialog.setCancelable(false);//окно нельзя закрыть системной кнопкой
         dialog.show();//показ диалог окна
 
+        //Вызов диалогового окна в конце игры;
+        dialogEnd = new Dialog(this);
+        dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрытие заголовка
+        dialogEnd.setContentView(R.layout.preview_6_end);//путь к макету диалог. окна
+        dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозначный фон
+        dialogEnd.setCancelable(false);//окно нельзя закрыть системной кнопкой
+
+
+        //кнопка которая закрывает диалоговое окно - начало
+        TextView btnclose2 = (TextView)dialogEnd.findViewById(R.id.btnclose);
+        btnclose2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //обработка нажатия кнопки - начало
+                try {
+                    //Вернуться назад к выбору уровня - начало
+                    Intent intent = new Intent( level6.this, EngLevels.class); //намеренье для перехода
+                    startActivity(intent); //Старт намеренье
+                    finish();
+                    //Вернуться назад к выбору уровня - конец
+
+                }catch (Exception e) {
+                    // нету кода
+                }
+                dialogEnd.dismiss();//закрытие диалогового окна
+                //обработка нажатия кнопки - конец
+
+            }
+        });
+        //кнопка которая закрывает диалоговое окно - конец
+        //кнопка продолжить - начало
+        Button btncontinue2 = (Button)dialogEnd.findViewById(R.id.btncontinue);
+        btncontinue2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try{
+                    Intent intent = new Intent(level6.this, level7.class);
+                    startActivity(intent);
+                    finish();
+                }catch (Exception e){
+                    //Сдесь код не нужен
+                }
+                dialogEnd.dismiss(); // Закрываем диалоговое окно
+            }
+        });
+        //кнопка продолжить - конец
         //кнопка которая закрывает диалоговое окно - начало
         TextView btnclose = (TextView)dialog.findViewById(R.id.btnclose);
 
@@ -123,15 +170,6 @@ public class level6 extends AppCompatActivity {
         setQuestion(0);
         // Receive quizCategory from StartActivity.
         int quizCategory = getIntent().getIntExtra("QUIZ_CATEGORY", 0);
-        // Create quizArray from quizData.
-//        for (int i = 0; i < quizquest.length; i++) {
-//
-//            // Prepare array.
-//            ArrayList<String> tmpArray = new ArrayList<>();
-//            tmpArray.add(quizquest[i][0]); // Country
-//            tmpArray.add(quizquest[i][1]); // Right Answer
-//            quizArray.add(tmpArray);
-//        }
         showNextQuiz();
     }
 
@@ -157,21 +195,20 @@ public class level6 extends AppCompatActivity {
 
     private void increaseProgress() {
         if (rightAnswerCount < progress.length){
+
             TextView tv = findViewById(progress[rightAnswerCount]);
             tv.setBackgroundResource(R.drawable.style_points_true);
             rightAnswerCount++;
-        }
+
+            } else{
+                dialogEnd.show();
+            }
 
     }
 
     public void showNextQuiz() {
         Random random = new Random();
         setQuestion(random.nextInt(array.texts1.length));
-        // Pick one quiz set.
-//        ArrayList<String> quiz = quizArray.get(randomNum);
-        // Set question and right answer.
-        // Array format: {"Country", "Right Answer", "Choice1", "Choice2", "Choice3"}
-//        rightAnswer = quiz.get(1);
     }
 
     public void checkAnswer(View view) {

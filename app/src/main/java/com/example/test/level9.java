@@ -33,6 +33,9 @@ public class level9 extends AppCompatActivity {
     int numCurrentQuestion = 0;
     Level9Question currentQuestion;
 
+    private final int[] progress = {
+            R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5,R.id.point6, R.id.point7, R.id.point8
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -120,17 +123,23 @@ public class level9 extends AppCompatActivity {
 
         if (currentQuestion.isRightAnswer() == isTrue){
             Toast.makeText(this, "Right Answer", Toast.LENGTH_SHORT).show();
-            if (currentQuestionCounter < 10){
+            if (currentQuestionCounter < progress.length){
                 generateQuestion();
                 updateQuestion();
+                TextView tv = findViewById(progress[currentQuestionCounter]);
+                tv.setBackgroundResource(R.drawable.style_points_true);
                 currentQuestionCounter++;
+
             } else {
+
                 // end
             }
 
         } else {
             Toast.makeText(this, "Wrong Answer", Toast.LENGTH_SHORT).show();
-            currentQuestionCounter = 0;
+            currentQuestionCounter--;
+            TextView tv = findViewById(progress[currentQuestionCounter]);
+            tv.setBackgroundResource(R.drawable.style_points);
             generateQuestion();
             updateQuestion();
         }

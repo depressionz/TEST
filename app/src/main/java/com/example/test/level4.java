@@ -1,6 +1,6 @@
 package com.example.test;
 
-import android.annotation.SuppressLint;
+
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -15,7 +15,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Random;
 
@@ -23,13 +22,13 @@ import java.util.Random;
 public class level4 extends AppCompatActivity {
 
     Dialog dialog;
-    Dialog dialogEnd;
-    Dialog dialogEnd_over;
     private TextView countLabel;
     private TextView questionlabel;
     private Button answerBtn1;
     private Button answerBtn2;
     private Button answerBtn3;
+    Dialog dialogEnd;
+    Dialog dialogEnd_over;
     public int count = 0; //счетчик правильных ответов
 
     public String rightAnswer;
@@ -56,7 +55,7 @@ public class level4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.victorina5lvl);
+        setContentView(R.layout.victorina4lvl);
 
         countLabel = findViewById(R.id.countLabel);
         questionlabel = findViewById(R.id.questionLabel);
@@ -294,7 +293,7 @@ public class level4 extends AppCompatActivity {
 
     public void showNextQuiz() {
         // Generate random number between 0 and 14 (quizArray's size - 1)
-        countLabel.setText("Q" + quizCount);
+        countLabel.setText("Вопрос:" + quizCount);
         Random random = new Random();
         int randomNum = random.nextInt(quizArray.size());
         // Pick one quiz set.
@@ -321,9 +320,8 @@ public class level4 extends AppCompatActivity {
     public void checkAnswer(View view) {
         Button answerBtn = (Button) findViewById(view.getId());
         String btnText = answerBtn.getText().toString();
-        String alertTitle;
         final int[] progress = {
-                R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5, R.id.point6, R.id.point7, R.id.point8, R.id.point9
+                R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5, R.id.point6, R.id.point7, R.id.point8, R.id.point7
         };
 
 
@@ -370,9 +368,9 @@ public class level4 extends AppCompatActivity {
                 tv.setBackgroundResource(R.drawable.style_points_true);
             }
             //Определяем правильный ответ + закрашиваем  - конец
-          //  if (count == 8){
-       //         dialogEnd.show();
-         //   }
+            //  if (count == 8){
+            //         dialogEnd.show();
+            //   }
         }
         showNextQuiz();
     }

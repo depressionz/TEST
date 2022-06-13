@@ -114,7 +114,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/point"
+                    android:id="@+id/point6"
                     android:layout_width="wrap_content"
                     android:layout_height="10dp"
                     android:layout_weight="1"
@@ -123,106 +123,7 @@
                     />
 
                 <TextView
-                    android:id="@+id/point9"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point19"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point20"
+                    android:id="@+id/point7"
                     android:layout_width="wrap_content"
                     android:layout_height="10dp"
                     android:layout_weight="1"
@@ -232,14 +133,34 @@
 
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView21"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="40dp"
-                android:text="@string/level_eight"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_level_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="40dp"
+                    android:text="@string/level_eight"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_level"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="40dp"
+                    android:paddingStart="0dp"
+                    android:paddingLeft="40dp"
+                    android:paddingTop="0dp"
+                    android:text="@string/level_eight"
+                    android:textColor="#00FF88"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/line3"
@@ -265,7 +186,7 @@
                     />
 
                 <ImageView
-                    android:id="@+id/img_right3"
+                    android:id="@+id/img_left"
                     android:layout_width="308dp"
                     android:layout_height="150dp"
                     android:layout_marginLeft="10dp"
@@ -290,7 +211,7 @@
             android:paddingTop="25dp">
 
             <ImageView
-                android:id="@+id/img_right4"
+                android:id="@+id/img_right1"
                 android:layout_width="308dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="10dp"
@@ -305,7 +226,7 @@
                 />
 
             <ImageView
-                android:id="@+id/img_right5"
+                android:id="@+id/img_left1"
                 android:layout_width="308dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="10dp"

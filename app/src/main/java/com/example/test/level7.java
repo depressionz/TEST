@@ -1,5 +1,4 @@
 package com.example.test;
-
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,8 +7,6 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -39,11 +36,12 @@ public class level7 extends AppCompatActivity {
     Random random = new Random(); //Для генерации случайной картинки  (чисел)
     public int count = 0; //счетчик правильных ответов
     Dialog dialog;
+    Dialog dialogEnd;
     private List<Integer> answersNumbers;
 
 
     private final int[] progress = {
-            R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5,
+            R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5,R.id.point6, R.id.point7
     };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +56,53 @@ public class level7 extends AppCompatActivity {
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозначный фон
         dialog.setCancelable(false);//окно нельзя закрыть системной кнопкой
         dialog.show();//показ диалог окна
+
+        //Вызов диалогового окна в конце игры;
+        dialogEnd = new Dialog(this);
+        dialogEnd.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрытие заголовка
+        dialogEnd.setContentView(R.layout.preview_7_end);//путь к макету диалог. окна
+        dialogEnd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));//прозначный фон
+        dialogEnd.setCancelable(false);//окно нельзя закрыть системной кнопкой
+
+
+        //кнопка которая закрывает диалоговое окно - начало
+        TextView btnclose2 = (TextView)dialogEnd.findViewById(R.id.btnclose);
+        btnclose2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //обработка нажатия кнопки - начало
+                try {
+                    //Вернуться назад к выбору уровня - начало
+                    Intent intent = new Intent( level7.this, EngLevels.class); //намеренье для перехода
+                    startActivity(intent); //Старт намеренье
+                    finish();
+                    //Вернуться назад к выбору уровня - конец
+
+                }catch (Exception e) {
+                    // нету кода
+                }
+                dialogEnd.dismiss();//закрытие диалогового окна
+                //обработка нажатия кнопки - конец
+
+            }
+        });
+        //кнопка которая закрывает диалоговое окно - конец
+        //кнопка продолжить - начало
+        Button btncontinue2 = (Button)dialogEnd.findViewById(R.id.btncontinue);
+        btncontinue2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                try{
+                    Intent intent = new Intent(level7.this, level8.class);
+                    startActivity(intent);
+                    finish();
+                }catch (Exception e){
+                    //Сдесь код не нужен
+                }
+                dialogEnd.dismiss(); // Закрываем диалоговое окно
+            }
+        });
+        //кнопка продолжить - конец
 
         //кнопка которая закрывает диалоговое окно - начало
         TextView btnclose = (TextView)dialog.findViewById(R.id.btnclose);
@@ -117,7 +162,7 @@ public class level7 extends AppCompatActivity {
         });
         //Кнопка вернуться - конец
 
-        text_level = findViewById(R.id.text_level);
+        text_level = findViewById(R.id.text_level_1);
 
         //Скругляем края для левой картинки - начало
         img_left = (ImageView)findViewById(R.id.img_left);
@@ -247,10 +292,6 @@ public class level7 extends AppCompatActivity {
                 imageView.setEnabled(false);
 
             });
-//
-//            img_right.setEnabled(false); //блокируем правую картинку
-//            img_right1.setEnabled(false);
-//            img_left1.setEnabled(false);
 
 
             if(numAnswer == text_level_2) {
@@ -263,7 +304,7 @@ public class level7 extends AppCompatActivity {
             //Если отпустил палец - начало
             if (numAnswer == text_level_2){
                 //Если правильно нажмал
-                if (count<6){
+                if (count<7){
                     count=count+1;
                 }
 
@@ -306,8 +347,8 @@ public class level7 extends AppCompatActivity {
                 //Определяем правильный ответ + закрашиваем  - конец
             }
             //Если отпустил палец - конец
-            if (count==6){
-                //ВЫХОД ИЗ УРОВНЯ - dialog.show
+            if (count==7){
+                dialogEnd.show();
 
             }else{
 
@@ -320,6 +361,4 @@ public class level7 extends AppCompatActivity {
         }
 
     }
-
-
 }
