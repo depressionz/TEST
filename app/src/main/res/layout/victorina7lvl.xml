@@ -131,105 +131,6 @@
 
                     />
 
-                <TextView
-                    android:id="@+id/point10"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point13"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point17"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point18"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point19"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
-                <TextView
-                    android:id="@+id/point20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="10dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/style_points"
-
-                    />
-
             </LinearLayout>
 
             <LinearLayout
@@ -256,7 +157,7 @@
                     />
 
                 <ImageView
-                    android:id="@+id/img_right3"
+                    android:id="@+id/img_left"
                     android:layout_width="308dp"
                     android:layout_height="150dp"
                     android:layout_marginLeft="10dp"
@@ -275,7 +176,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/text_level"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="40dp"
@@ -290,7 +191,7 @@
             android:paddingTop="25dp">
 
             <ImageView
-                android:id="@+id/img_right4"
+                android:id="@+id/img_right1"
                 android:layout_width="308dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="10dp"
@@ -305,7 +206,7 @@
                 />
 
             <ImageView
-                android:id="@+id/img_right5"
+                android:id="@+id/img_left1"
                 android:layout_width="308dp"
                 android:layout_height="150dp"
                 android:layout_marginLeft="10dp"

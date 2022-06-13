@@ -155,10 +155,9 @@
             android:paddingTop="30dp"
             android:text="@string/level_six"
             android:textSize="20dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="201dp"
             android:layout_marginStart="40dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="40dp"
@@ -168,7 +167,7 @@
             android:paddingTop="30dp">
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
@@ -182,11 +181,12 @@
                 android:paddingEnd="0dp" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:id="@+id/btn_next"
+                android:layout_width="305dp"
+                android:layout_height="50dp"
                 android:layout_marginBottom="60dp"
                 android:background="@drawable/style_button_next"
+                android:minHeight="48dp"
                 android:paddingTop="0dp"
                 android:text="@string/textcontinue"
                 android:textSize="16sp" />

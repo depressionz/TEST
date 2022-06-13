@@ -15,7 +15,7 @@
         android:gravity="center">
 
         <TextView
-            android:id="@+id/btn_back"
+            android:id="@+id/btnclose"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_gravity="start"

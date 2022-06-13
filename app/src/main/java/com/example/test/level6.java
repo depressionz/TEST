@@ -8,19 +8,40 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 public class level6 extends AppCompatActivity {
 
     Dialog dialog;
-    @Override
+    public String rightAnswer;
+    public int rightAnswerCount = 0;
+    public int quizCount = 1;
+    public int count = 0; //счетчик правильных ответов
+    Arrayfor6 array = new Arrayfor6();
+    private ImageView image_center;
+
+    final int[] progress = {
+            R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5, R.id.point6, R.id.point7, R.id.point8, R.id.point9
+    };
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.spelling6lvl);
 
 
+
+
+        EditText ext_edit = findViewById(R.id.edit_text);
+        Button btn_next = findViewById(R.id.btn_next);
         //Вызов диалогового окна в начале игры;
         dialog = new Dialog(this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);//скрытие заголовка
@@ -31,6 +52,13 @@ public class level6 extends AppCompatActivity {
 
         //кнопка которая закрывает диалоговое окно - начало
         TextView btnclose = (TextView)dialog.findViewById(R.id.btnclose);
+
+        btn_next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                checkTextAnswer();
+            }
+        });
         btnclose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,9 +76,11 @@ public class level6 extends AppCompatActivity {
                 dialog.dismiss();//закрытие диалогового окна
                 //обработка нажатия кнопки - конец
 
+
             }
         });
         //кнопка которая закрывает диалоговое окно - конец
+
 
         //кнопка продолжить - начало
         Button btncontinue = (Button)dialog.findViewById(R.id.btncontinue);
@@ -84,8 +114,81 @@ public class level6 extends AppCompatActivity {
             }
         });
         //Кнопка вернуться - конец
+        // Скругляем края для правой картинки - начало
+        final ImageView img_center = (ImageView)findViewById(R.id.img_right);
+        img_center.setClipToOutline(true);
+        // Скругляем края для правой картинки - конец
+
+        image_center = (ImageView)findViewById(R.id.img_right);
+        setQuestion(0);
+        // Receive quizCategory from StartActivity.
+        int quizCategory = getIntent().getIntExtra("QUIZ_CATEGORY", 0);
+        // Create quizArray from quizData.
+//        for (int i = 0; i < quizquest.length; i++) {
+//
+//            // Prepare array.
+//            ArrayList<String> tmpArray = new ArrayList<>();
+//            tmpArray.add(quizquest[i][0]); // Country
+//            tmpArray.add(quizquest[i][1]); // Right Answer
+//            quizArray.add(tmpArray);
+//        }
+        showNextQuiz();
+    }
+
+    private void setQuestion(int numberQuestion) {
+        image_center.setImageResource(array.images1[numberQuestion]);
+        rightAnswer = getString(array.texts1[numberQuestion]);
+    }
+
+    private void checkTextAnswer() {
+        EditText editText = findViewById(R.id.edit_text);
+
+        String playerAnswer = editText.getText().toString();
+        if (playerAnswer.equalsIgnoreCase(rightAnswer)){
+            Toast.makeText(this, "Right answer", Toast.LENGTH_SHORT).show();
+            increaseProgress();
+        } else {
+            Toast.makeText(this, "Wrong answer", Toast.LENGTH_SHORT).show();
+        }
+        showNextQuiz();
 
 
+    }
+
+    private void increaseProgress() {
+        if (rightAnswerCount < progress.length){
+            TextView tv = findViewById(progress[rightAnswerCount]);
+            tv.setBackgroundResource(R.drawable.style_points_true);
+            rightAnswerCount++;
+        }
+
+    }
+
+    public void showNextQuiz() {
+        Random random = new Random();
+        setQuestion(random.nextInt(array.texts1.length));
+        // Pick one quiz set.
+//        ArrayList<String> quiz = quizArray.get(randomNum);
+        // Set question and right answer.
+        // Array format: {"Country", "Right Answer", "Choice1", "Choice2", "Choice3"}
+//        rightAnswer = quiz.get(1);
+    }
+
+    public void checkAnswer(View view) {
+        EditText answerBtn = (EditText) findViewById(view.getId());
+        String editText = answerBtn.getText().toString();
+
+        if (editText.equals(rightAnswer))
+        {
+            rightAnswerCount++;
+            TextView tv = findViewById(progress[0]);
+            tv.setBackgroundResource(R.drawable.style_points_true);
+            rightAnswerCount++;
+        }
+
+        else {
+
+        }
     }
     //Системная кнопка назад - начало
     @Override

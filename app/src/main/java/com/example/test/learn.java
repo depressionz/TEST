@@ -18,13 +18,11 @@ public class learn extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tickethelp);
+        setContentView(R.layout.item_koloda);
 
         list = new ArrayList<>();
 
-        adapter = new SwipeAdapter(this, list);
-        koloda.setAdapter(adapter);
-        koloda = findViewById(R.id.koloda);
+
 
 
     }

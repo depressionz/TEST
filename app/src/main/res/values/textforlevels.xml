@@ -11,4 +11,87 @@
     <string name="lvl2text9">Bird</string>
     <string name="lvl2text10">Cow</string>
 
+    <string name="lvl3text1">Have</string>
+    <string name="lvl3text2">Make</string>
+    <string name="lvl3text3">Try</string>
+    <string name="lvl3text4">Know</string>
+    <string name="lvl3text5">Think</string>
+    <string name="lvl3text6">Feel</string>
+    <string name="lvl3text7">See</string>
+    <string name="lvl3text8">Give</string>
+    <string name="lvl3text9">Put</string>
+
+    <string name="lvl4text1">Fight</string>
+    <string name="lvl4text2">Look</string>
+    <string name="lvl4text3">Learn</string>
+    <string name="lvl4text4">Pay</string>
+    <string name="lvl4text5">Play</string>
+    <string name="lvl4text6">Dream</string>
+    <string name="lvl4text7">Run</string>
+    <string name="lvl4text8">Close</string>
+    <string name="lvl4text9">Help</string>
+    <string name="lvl4text10">Travel</string>
+    <string name="lvl4text11">Forget</string>
+
+    <string name="lvl42text1">Сражатсья</string>
+    <string name="lvl42text2">Смотреть</string>
+    <string name="lvl42text3">Учить</string>
+    <string name="lvl42text4">Платить</string>
+    <string name="lvl42text5">Играть</string>
+    <string name="lvl42text6">Мечтать</string>
+    <string name="lvl42text7">Бежать</string>
+    <string name="lvl42text8">Закрывать</string>
+    <string name="lvl42text9">Помогать</string>
+    <string name="lvl42text10">Путешествовать</string>
+    <string name="lvl42text11">Забывать</string>
+
+    <string name="lvl52text1">Family</string>
+    <string name="lvl52text2">Grandmother</string>
+    <string name="lvl52text3">grandparents</string>
+    <string name="lvl52text4">grandfather</string>
+    <string name="lvl52text5">Mother</string>
+    <string name="lvl52text6">Brother</string>
+    <string name="lvl52text7">Sister</string>
+    <string name="lvl52text8">Kid</string>
+    <string name="lvl52text9">Relative</string>
+    <string name="lvl52text10">Great-grandfather</string>
+    //Вторая часть (4-5 уровень текста из Листа)
+    <string name="lvl5text1">Семья</string>
+    <string name="lvl5text2">Бабушка</string>
+    <string name="lvl5text3">Бабушка с дедушкой</string>
+    <string name="lvl5text4">Дедушка</string>
+    <string name="lvl5text5">Мама</string>
+    <string name="lvl5text6">Брат</string>
+    <string name="lvl5text7">Сестра</string>
+    <string name="lvl5text8">Ребёнок</string>
+    <string name="lvl5text9">Родственник</string>
+    <string name="lvl5text10">Прадедушка</string>
+
+
+    <string name="lvl7text1">Airplane</string>
+    <string name="lvl7text2">Apple</string>
+    <string name="lvl7text3">Bike</string>
+    <string name="lvl7text4">Bird</string>
+    <string name="lvl7text5">Bus</string>
+    <string name="lvl7text6">Car</string>
+    <string name="lvl7text7">Day</string>
+    <string name="lvl7text8">Doctor</string>
+    <string name="lvl7text9">Driver</string>
+    <string name="lvl7text10">Family</string>
+    <string name="lvl7text11">Forest</string>
+    <string name="lvl7text12">Head</string>
+    <string name="lvl7text13">Name</string>
+    <string name="lvl7text14">Nature</string>
+    <string name="lvl7text15">Night</string>
+
+    <string name="lvl8text1">Family</string>
+    <string name="lvl8text2">Grandmother</string>
+    <string name="lvl8text3">Put</string>
+    <string name="lvl8text4">Run</string>
+
+
+
+
+
+
 </resources>

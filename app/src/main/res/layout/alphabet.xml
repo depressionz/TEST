@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/l_latter"
+    android:id="@+id/latter"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -190,7 +190,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/e"
+                    android:id="@+id/e_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:paddingStart="30dp"
@@ -198,14 +198,14 @@
                     android:src="@drawable/e" />
 
                 <ImageView
-                    android:id="@+id/F"
+                    android:id="@+id/f_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="20dp"
                     android:src="@drawable/f" />
 
                 <ImageView
-                    android:id="@+id/g"
+                    android:id="@+id/g_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="1dp"
@@ -229,7 +229,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/i"
+                    android:id="@+id/i_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:paddingLeft="30dp"
@@ -244,7 +244,7 @@
                     android:src="@drawable/j" />
 
                 <ImageView
-                    android:id="@+id/K"
+                    android:id="@+id/k_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="1dp"
@@ -268,7 +268,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/M"
+                    android:id="@+id/m_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:paddingLeft="30dp"
@@ -290,7 +290,7 @@
                     android:src="@drawable/o" />
 
                 <ImageView
-                    android:id="@+id/P"
+                    android:id="@+id/p_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -307,7 +307,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/Q"
+                    android:id="@+id/q_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:paddingLeft="30dp"
@@ -315,21 +315,21 @@
                     android:src="@drawable/q" />
 
                 <ImageView
-                    android:id="@+id/R"
+                    android:id="@+id/r_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="20dp"
                     android:src="@drawable/r" />
 
                 <ImageView
-                    android:id="@+id/S"
+                    android:id="@+id/s_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="1dp"
                     android:src="@drawable/s" />
 
                 <ImageView
-                    android:id="@+id/T"
+                    android:id="@+id/t_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -346,7 +346,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/u"
+                    android:id="@+id/u_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:paddingLeft="30dp"
@@ -354,21 +354,21 @@
                     android:src="@drawable/u" />
 
                 <ImageView
-                    android:id="@+id/V"
+                    android:id="@+id/v_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="20dp"
                     android:src="@drawable/v" />
 
                 <ImageView
-                    android:id="@+id/W"
+                    android:id="@+id/w_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="20dp"
                     android:src="@drawable/w" />
 
                 <ImageView
-                    android:id="@+id/X"
+                    android:id="@+id/x_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
@@ -385,7 +385,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/y"
+                    android:id="@+id/y_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="120dp"
@@ -393,7 +393,7 @@
                     android:src="@drawable/y" />
 
                 <ImageView
-                    android:id="@+id/Z"
+                    android:id="@+id/z_latter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingRight="10dp"

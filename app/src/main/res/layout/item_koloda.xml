@@ -28,7 +28,7 @@
                 android:id="@+id/image"
                 android:backgroundTint="@color/white_snow"
 
-                app:srcCompat="@drawable/two"
+                app:srcCompat="@drawable/c_latter"
                 android:scaleType="fitXY"
                 app:shapeAppearanceOverlay="@style/Shape" />
 
