@@ -28,10 +28,23 @@ public class level7 extends AppCompatActivity {
     public int numright;
     public int numright1;//переменная для правой картинки
     public int text_level_2; //переменная для текста
+    private TextView text_level;
+    private ImageView img_left;
+    private ImageView img_left1;
+    private ImageView img_right;
+    private ImageView img_right1;
+    private ArrayList<ImageView> imageViews;
+    int answerNum;
     Arrayfor7 array = new Arrayfor7();
     Random random = new Random(); //Для генерации случайной картинки  (чисел)
     public int count = 0; //счетчик правильных ответов
     Dialog dialog;
+    private List<Integer> answersNumbers;
+
+
+    private final int[] progress = {
+            R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5,
+    };
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,6 +95,8 @@ public class level7 extends AppCompatActivity {
         });
         //кнопка продолжить - конец
 
+
+
         //Кнопка вернуться - начало
         Button btn_back = (Button) findViewById(R.id.button_back);
         btn_back.setOnClickListener(new View.OnClickListener() {
@@ -102,176 +117,106 @@ public class level7 extends AppCompatActivity {
         });
         //Кнопка вернуться - конец
 
-        TextView text_level = findViewById(R.id.text_level);
+        text_level = findViewById(R.id.text_level);
 
         //Скругляем края для левой картинки - начало
-        final ImageView img_left = (ImageView)findViewById(R.id.img_left);
+        img_left = (ImageView)findViewById(R.id.img_left);
         img_left.setClipToOutline(true);
-        final ImageView img_left1 = (ImageView)findViewById(R.id.img_left1);
+        img_left1 = (ImageView)findViewById(R.id.img_left1);
         img_left.setClipToOutline(true);
         //Скругляем края для левой картинки - конец
 
         // Скругляем края для правой картинки - начало
-        final ImageView img_right = (ImageView)findViewById(R.id.img_right);
+        img_right = (ImageView)findViewById(R.id.img_right);
         img_right.setClipToOutline(true);
-        final ImageView img_right1 = (ImageView)findViewById(R.id.img_right1);
+        img_right1 = (ImageView)findViewById(R.id.img_right1);
         img_right.setClipToOutline(true);
         // Скругляем края для правой картинки - конец
 
-        numright1 = random.nextInt(15);
-        numright = random.nextInt(15); //генерируем рандомное число от 0 до 14
-        numleft = random.nextInt(15); //генерируем рандомное число от 0 до 14
-        numleft1 = random.nextInt(15); //генерируем рандомное число от 0 до 14
-
+        imageViews = new ArrayList<>();
+        imageViews.add(img_right);
+        imageViews.add(img_right1);
+        imageViews.add(img_left);
+        imageViews.add(img_left1);
 
         //тут создаем переменную массива с вариантами ответов
-       List<Integer> answersNumbers = new ArrayList<>();
+       generateRandomQuestion();
 
-        while (numleft==numright || numleft == numleft1 || numleft == numright1 || numleft1 == numright1
-                || numright == numleft1 || numright == numright1 && text_level_2 != numleft1) {
-            numleft = random.nextInt(15 );
-            numleft1 = random.nextInt(15);
-            numright = random.nextInt(15);
-            numright1= random.nextInt(15);
+        // крашитсья?да
+
+
+        //Цикл для текста - генерируем пока не будет левой или правой картинки - конец
+
+//
+//        text_level.setText(array.texts1[text_level_2]);
+//        img_left1.setImageResource(array.images1[numleft1]);
+//        img_left.setImageResource(array.images1[numleft]); //тут картинка с этих переменных достается, и как раз рандомит ее, может отдельные создать переменные?  плохо без звука ++
+//        img_right.setImageResource(array.images1[numright]);
+//        img_right1.setImageResource(array.images1[numright1]);
+        //Обрабатываем нажатие на левую картинку - начало
+
+
+
+
+        //обработка на правую картинку 1  - начало
+        img_left.setOnTouchListener((view, event) -> {
+            onImageTap(event, numleft, img_left);
+            return true;
+        });
+
+        img_left1.setOnTouchListener((view, event) -> {
+            onImageTap(event, numleft1, img_left1);
+            return true;
+        });
+        img_right.setOnTouchListener((view, event) -> {
+            onImageTap(event, numright, img_right);
+            return true;
+        });
+        img_right1.setOnTouchListener((view, event) -> {
+            onImageTap(event, numright1, img_right1);
+            return true;
+        });
+        //Обрабатываем нажатие на правую картинку - конец
+
+    }
+
+    private void generateRandomQuestion() {
+
+        numleft = -1;
+        numleft1 = -1;
+        numright = -1;
+        numright1 = -1;
+        answersNumbers = new ArrayList<>();
+
+        while (numleft==numright || numleft == numleft1 || numleft == numright1
+                || numleft1 == numright1 || numright == numleft1 ||
+                numright == numright1 && text_level_2 != numleft1) {
+            numleft = random.nextInt(array.texts1.length );
+            numleft1 = random.nextInt(array.texts1.length);
+            numright = random.nextInt(array.texts1.length);
+            numright1= random.nextInt(array.texts1.length);
 
         }
 
 
         // тут мы добавили все варианты ответов в коллекцию смотри
-      answersNumbers.add(numleft);
-      answersNumbers.add(numleft1);
-      answersNumbers.add(numright);
-      answersNumbers.add(numright1);
+        answersNumbers.add(numleft);
+        answersNumbers.add(numleft1);
+        answersNumbers.add(numright);
+        answersNumbers.add(numright1);
 
-        // крашитсья?да
-
-        int answerNum = random.nextInt(answersNumbers.size());
+        answerNum = random.nextInt(answersNumbers.size());
         text_level_2 = answersNumbers.get(answerNum);
         //Цикл для текста - генерируем пока не будет к;артинки - начало
         // еще раз
 
         text_level.setText(array.texts1[text_level_2]);
-        //Цикл для текста - генерируем пока не будет левой или правой картинки - конец
-
-
-        text_level.setText(array.texts1[text_level_2]);
-        img_left1.setImageResource(array.images1[numleft1]);
-        img_left.setImageResource(array.images1[numleft]); //тут картинка с этих переменных достается, и как раз рандомит ее, может отдельные создать переменные?  плохо без звука ++
-        img_right.setImageResource(array.images1[numright]);
-        img_right1.setImageResource(array.images1[numright1]);
-        //Обрабатываем нажатие на левую картинку - начало
-
-        final int[] progress = {
-                R.id.point1, R.id.point2, R.id.point3, R.id.point4, R.id.point5,
-        };
-
-
-        //обработка на правую картинку 1  - начало
-        img_left.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View view, MotionEvent event) {
-                //Условие касания картинки - начало
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    //Если коснулся картинки - начало
-                    img_right.setEnabled(false); //блокируем правую картинку
-                    img_right1.setEnabled(false);
-                    img_left1.setEnabled(false);
-                    if(numleft == text_level_2) {
-                        img_left.setImageResource(R.drawable.img_true);
-                    } else{
-                        img_left.setImageResource(R.drawable.img_false);
-                        //Если коснулся картинки конец
-                    }
-                } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                    //Если отпустил палец - начало
-                    if (numleft == text_level_2){
-                        //Если правильно нажмал
-                        if (count<6){
-                            count=count+1;
-                        }
-
-                        //закрашиваем прогресс серым - начало
-                        for (int i = 0; i<6; i++){
-                            TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points);
-
-                        }
-                        //закрашиваем прогресс серым - конец
-
-                        //Определяем правильный ответ + закрашиваем  - начало
-                        for (int i=0; i<count; i++) {
-                            TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_true);
-                        }
-                        //Определяем правильный ответ + закрашиваем  - конец
-                    }else{
-                        //Если неправильно нажмал
-                        if(count>0){
-                            if(count==1){
-                                count=0;
-                            }else{
-                                count=count-1;
-                            }
-                        }
-                        //закрашиваем прогресс серым - начало
-                        for (int i = 0; i<6; i++){
-                            TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points);
-
-                        }
-                        //закрашиваем прогресс серым - конец
-
-                        //Определяем правильный ответ + закрашиваем  - начало
-                        for (int i=0; i<count; i++) {
-                            TextView tv = findViewById(progress[i]);
-                            tv.setBackgroundResource(R.drawable.style_points_true);
-                        }
-                        //Определяем правильный ответ + закрашиваем  - конец
-                    }
-                    //Если отпустил палец - конец
-                    if (count==6){
-                        //ВЫХОД ИЗ УРОВНЯ - dialog.show
-
-                    }else{
-                        numleft = random.nextInt(14); //генерируем рандомное число от 0 до 14
-                        img_left.setImageResource(array.images1[numleft]); //Достаем из массива картинку
-                        numleft1 = random.nextInt(14);
-                        img_left1.setImageResource(array.images1[numleft1]); //Достаем из массива картинку
-
-                        numright = random.nextInt(14); //генерируем рандомное число от 0 до 14
-                        numright1 = random.nextInt(14);
-
-                        //цикл с предусловием - начало
-                        while (numleft==numright || numleft1 == numright1) {
-                            numright = random.nextInt(14 );
-                            numright1 = random.nextInt(14 );
-                        }
-                        //цикл с предусловием - конец
-
-                        //Цикл для текста - генерируем пока не будет левой или правой картинки - начало
-                        while (text_level_2 != numleft && text_level_2 != numright){
-                            text_level_2 = random.nextInt(14);
-
-                        }
-                        text_level.setText(array.texts1[text_level_2]);
-                        //Цикл для текста - генерируем пока не будет левой или правой картинки - конец
-
-
-                        img_right.setImageResource(array.images1[numright]);
-                        img_right1.setImageResource(array.images1[numright1]);//Достаем с массива картинку
-                        text_level.setText(array.texts1[text_level_2]);
-
-                        img_right.setEnabled(true); //включаем обратно правую картинку
-                    }
-                }
-                //
-                // конец
-                return true;
-            }
-        });
-        //Обрабатываем нажатие на правую картинку - конец
-
+        img_left.setImageResource(array.images1[answersNumbers.get(0)]);
+        img_left1.setImageResource(array.images1[answersNumbers.get(1)]);
+        img_right.setImageResource(array.images1[answersNumbers.get(2)]);
+        img_right1.setImageResource(array.images1[answersNumbers.get(3)]);
     }
+
     //Системная кнопка назад - начало
     @Override
     public void onBackPressed(){
@@ -288,6 +233,93 @@ public class level7 extends AppCompatActivity {
         //обработка нажатия кнопки вернуться - конец
     }
     //Системная кнопка назад - конец
+
+    private void onImageTap(MotionEvent event, int numAnswer, ImageView answerImageView){
+
+        //Условие касания картинки - начало
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            //Если коснулся картинки - начало
+
+            imageViews.forEach((imageView) -> {
+                if (imageView == answerImageView){
+                    return;
+                }
+                imageView.setEnabled(false);
+
+            });
+//
+//            img_right.setEnabled(false); //блокируем правую картинку
+//            img_right1.setEnabled(false);
+//            img_left1.setEnabled(false);
+
+
+            if(numAnswer == text_level_2) {
+                answerImageView.setImageResource(R.drawable.img_true);
+            } else{
+                answerImageView.setImageResource(R.drawable.img_false);
+                //Если коснулся картинки конец
+            }
+        } else if (event.getAction() == MotionEvent.ACTION_UP) {
+            //Если отпустил палец - начало
+            if (numAnswer == text_level_2){
+                //Если правильно нажмал
+                if (count<6){
+                    count=count+1;
+                }
+
+                //закрашиваем прогресс серым - начало
+                for (int i = 0; i<progress.length; i++){
+                    TextView tv = findViewById(progress[i]);
+                    tv.setBackgroundResource(R.drawable.style_points);
+
+                }
+                //закрашиваем прогресс серым - конец
+
+                //Определяем правильный ответ + закрашиваем  - начало
+                for (int i=0; i<count; i++) {
+                    TextView tv = findViewById(progress[i]);
+                    tv.setBackgroundResource(R.drawable.style_points_true);
+                }
+                //Определяем правильный ответ + закрашиваем  - конец
+            }else{
+                //Если неправильно нажмал
+                if(count>0){
+                    if(count==1){
+                        count=0;
+                    }else{
+                        count=count-1;
+                    }
+                }
+                //закрашиваем прогресс серым - начало
+                for (int i = 0; i<progress.length; i++){
+                    TextView tv = findViewById(progress[i]);
+                    tv.setBackgroundResource(R.drawable.style_points);
+
+                }
+                //закрашиваем прогресс серым - конец
+
+                //Определяем правильный ответ + закрашиваем  - начало
+                for (int i=0; i<count; i++) {
+                    TextView tv = findViewById(progress[i]);
+                    tv.setBackgroundResource(R.drawable.style_points_true);
+                }
+                //Определяем правильный ответ + закрашиваем  - конец
+            }
+            //Если отпустил палец - конец
+            if (count==6){
+                //ВЫХОД ИЗ УРОВНЯ - dialog.show
+
+            }else{
+
+                generateRandomQuestion();
+                img_right.setEnabled(true); //включаем обратно правую картинку
+                img_right1.setEnabled(true); //включаем обратно правую картинку
+                img_left.setEnabled(true); //включаем обратно правую картинку
+                img_left1.setEnabled(true); //включаем обратно правую картинку
+            }
+        }
+
+    }
 
 
 }

@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 try{
-                    Intent intent = new Intent(MainActivity.this, learn.class);
+                    Intent intent = new Intent(MainActivity.this, MainActivityBase.class);
                     startActivity(intent);finish();
                 } catch (Exception e ){
 
